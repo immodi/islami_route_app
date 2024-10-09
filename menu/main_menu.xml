@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_item1"
+            android:icon="@drawable/icon_radio"
+            android:title="Radio" />
+        <item
+            android:id="@+id/nav_item2"
+            android:icon="@drawable/icon_sebha"
+            android:title="Sebha" />
+        <item
+            android:id="@+id/nav_item3"
+            android:icon="@drawable/icon_hadeth"
+            android:title="Hadeth" />
+        <item
+            android:id="@+id/nav_item4"
+            android:checked="true"
+            android:icon="@drawable/icon_quran"
+            android:title="Quran" />
+    </group>
+</menu>

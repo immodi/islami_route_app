@@ -1,0 +1,25 @@
+package com.client.routeapplication.quran
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.TextView
+import com.client.routeapplication.R
+
+class SoraReadFragment(private val soraArray: List<String>) : Fragment() {
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        // Initialize the RecyclerView
+        val view = inflater.inflate(R.layout.fragment_read, container, false)
+
+        view.findViewById<TextView>(R.id.sora_name).text = soraArray[0]
+        view.findViewById<TextView>(R.id.sora_content).text = soraArray[1]
+
+        return view
+    }
+}
